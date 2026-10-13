@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carteiro-jornal"
+version = "1.0.0"
+description = "Gera edicoes de jornal HTML a partir de buscas em noticias."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+carteiro = "carteiro.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["carteiro*"]
